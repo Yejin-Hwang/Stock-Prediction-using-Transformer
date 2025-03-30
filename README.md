@@ -42,3 +42,47 @@ You can consider adding these sections:
    - `models/`: Model training and evaluation scripts
    - `notebooks/`: Jupyter notebooks for EDA and results visualization
    - `results/`: Plots and performance metrics
+
+## 2. 📊 Model Forecast Visualizations
+
+### 🔷 ARIMA Model
+![ARIMA Forecast](ARIMA_TSLA.png)
+
+> **Performance**  
+> - MAE: 63.26  
+> - MSE: 6864.38  
+> - RMSE: 82.85  
+> ❗️Fails to capture nonlinear trends in stock prices
+
+---
+
+### 🔵 Google TimesFM
+![TimesFM Forecast](timesfm_TSLA.png)
+
+> **Performance**  
+> - MAE: 39.17  
+> - MSE: 2669.70  
+> - RMSE: 51.96  
+
+---
+
+### 🟢 Amazon Chronos-T5
+![Chronos Forecast](Chrono_TSLA.png)
+
+> **Performance**  
+> - MAE: 34.46  
+> - MSE: 1784.40  
+> - RMSE: 42.24  
+
+
+---
+
+## 🧮 Evaluation Matrix
+
+| Model     | MAE      | MSE       | RMSE     |
+|-----------|----------|-----------|----------|
+| **ARIMA** | 🔴 63.93 | 🔴 6925.83 | 🔴 83.22 |
+| **TimesFM** | 39.17   | 2699.70   | 51.96    |
+| **Chronos** | 🔵 34.45 | 🔵 1784.40 | 🔵 42.24 |
+
+> Chronos-T5 shows the **best overall performance**, followed by TimesFM, while ARIMA performs the worst across all metrics.
