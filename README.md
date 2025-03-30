@@ -46,20 +46,22 @@ You can consider adding these sections:
 ## 2. 📊 Model Forecast Visualizations
 
 ### 🔷 ARIMA Model
-![ARIMA Forecast](ARIMA_TSLA.png)
 
-> **Performance**  
+![ARIMA Forecast](./result/ARIMA_TSLA.png)
+
+> **Performance**
 > - MAE: 63.26  
 > - MSE: 6864.38  
 > - RMSE: 82.85  
-> ❗️Fails to capture nonlinear trends in stock prices
+> ❗Fails to capture nonlinear trends in stock prices
 
 ---
 
 ### 🔵 Google TimesFM
-![TimesFM Forecast](timesfm_TSLA.png)
 
-> **Performance**  
+![TimesFM Forecast](./result/timesfm_TSLA.png)
+
+> **Performance**
 > - MAE: 39.17  
 > - MSE: 2669.70  
 > - RMSE: 51.96  
@@ -67,7 +69,8 @@ You can consider adding these sections:
 ---
 
 ### 🟢 Amazon Chronos-T5
-![Chronos Forecast](Chrono_TSLA.png)
+
+![Chronos Forecast](./result/Chrono_TSLA.png)
 
 > **Performance**  
 > - MAE: 34.46  
