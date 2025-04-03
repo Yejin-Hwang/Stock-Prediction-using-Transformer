@@ -45,7 +45,7 @@ You can consider adding these sections:
 
 ## 2. 📊 Model Forecast Visualizations
 
-### 🔷 ARIMA Model
+### 🔷 ARIMA Model (90 days prediction) 
 
 ![ARIMA Forecast](./result/ARIMA_TSLA.png)
 
@@ -55,37 +55,76 @@ You can consider adding these sections:
 > - RMSE: 82.85  
 > ❗Fails to capture nonlinear trends in stock prices
 
+### 🔷 ARIMA Model (5 days prediction) 
+
+![ARIMA Forecast](./result/ARIMA_TSLA_short.png)
+
+> **Performance**
+> - MAE: 9.64
+> - MSE: 126.96
+> - RMSE: 11.27
+
 ---
 
-### 🔵 Google TimesFM
+### 🔵 Google TimesFM (90 days prediction) 
 
 ![TimesFM Forecast](./result/timesfm_TSLA.png)
 
 > **Performance**
 > - MAE: 39.17  
 > - MSE: 2669.70  
-> - RMSE: 51.96  
+> - RMSE: 51.96
+
+### 🔵 Google TimesFM (5 days prediction) 
+
+![TimesFM Forecast](./result/timesfm_TSLA_short.png)
+
+> **Performance**
+> - MAE: 7.37
+> - MSE: 80.86
+> - RMSE: 8.99
 
 ---
 
-### 🟢 Amazon Chronos-T5
+### 🟢 Amazon Chronos-T5 (90 days prediction) 
 
 ![Chronos Forecast](./result/Chrono_TSLA.png)
 
 > **Performance**  
 > - MAE: 34.46  
 > - MSE: 1784.40  
-> - RMSE: 42.24  
+> - RMSE: 42.24
+
+### 🟢 Amazon Chronos-T5 (5 days prediction) 
+
+![Chronos Forecast](./result/Chrono_TSLA_short.png)
+
+> **Performance**  
+> - MAE: 18.20
+> - MSE: 386.51
+> - RMSE: 19.66
 
 
 ---
 
-## 🧮 Evaluation Matrix
+## Evaluation Metrix (90 days prediction) 
 
 | Model     | MAE      | MSE       | RMSE     |
 |-----------|----------|-----------|----------|
 | **ARIMA** | 🔴 63.93 | 🔴 6925.83 | 🔴 83.22 |
-| **TimesFM** | 39.17   | 2699.70   | 51.96    |
+| **TimesFM** | 39.17  | 2699.70  | 51.96   |
 | **Chronos** | 🔵 34.45 | 🔵 1784.40 | 🔵 42.24 |
 
-> Chronos-T5 shows the **best overall performance**, followed by TimesFM, while ARIMA performs the worst across all metrics.
+
+## Evaluation Metrix (5 days prediction) 
+
+
+| Model     | MAE      | MSE       | RMSE     |
+|-----------|----------|-----------|----------|
+| **ARIMA** |  9.64 |  126.96 | 11.27 |
+| **TimesFM** | 🔵 7.37   | 🔵 80.86  | 🔵 8.99    |
+| **Chronos** | 🔴 18.20 | 🔴 386.51 | 🔴 19.66 |
+
+📌 Summary:
+> - For **long-term** predictions (90 days), Chronos-T5 shows the best overall performance, followed by TimesFM, while ARIMA performs the worst across all metrics.
+> - For **short-term** predictions (5 days), TimesFM outperforms all models, achieving the lowest MAE, MSE, and RMSE. In contrast, Chronos-T5 struggles with short-horizon forecasting.
