@@ -19,15 +19,12 @@ The models are evaluated using:
 
 ## Key Findings
 
-- Deep learning models, particularly **Chronos-T5**, significantly outperform ARIMA.
-- Chronos-T5 captures **long-term dependencies** and **complex market behaviors** better than ARIMA.
-- Transformer-based models are more effective in handling stock market volatility.
 
-## Future Work
-
-- Incorporating **sentiment analysis** (e.g., news headlines, tweets)
-- Exploring **ensemble methods** to improve robustness and accuracy
-- Experimenting with other financial indicators beyond closing prices
+- Deep learning models, particularly Chronos-T5 and TimesFM, significantly outperform ARIMA in both short-term and long-term predictions.
+- Chronos-T5 excels in long-term forecasting, effectively capturing trends and complex market behaviors over extended periods.
+- TimesFM achieves the best short-term performance, handling immediate fluctuations and recent patterns more accurately.
+- Traditional models like ARIMA struggle with nonlinear patterns and volatility, leading to higher errors.
+- Transformer-based models demonstrate superior adaptability to the dynamic nature of stock prices.
 
 ---
 
