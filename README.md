@@ -128,3 +128,21 @@ You can consider adding these sections:
 📌 Summary:
 > - For **long-term** predictions (90 days), Chronos-T5 shows the best overall performance, followed by TimesFM, while ARIMA performs the worst across all metrics.
 > - For **short-term** predictions (5 days), TimesFM outperforms all models, achieving the lowest MAE, MSE, and RMSE. In contrast, Chronos-T5 struggles with short-horizon forecasting.
+
+
+## 🔮 Future Work
+
+1. **Expand Dataset**  
+   - Incorporate more recent or diverse financial data to improve generalization.
+
+2. **Apply More Advanced Statistical Models (SARIMA, Splines, etc.)**  
+   - Explore seasonal and nonlinear structures using classical time series methods.
+
+3. **Develop an Ensemble Model**  
+   - *TimesFM* performs well for short-term forecasting, while *Chronos* excels in long-term prediction.  
+   - Combine both models to improve stability and assign adaptive weights based on forecast horizon.
+
+4. **Incorporate Sentiment Analysis (News & Social Media Trends)**  
+   - Stock prices are heavily influenced by sentiment from news and social media.  
+   - Adding external sentiment signals could improve forecast accuracy.
+
