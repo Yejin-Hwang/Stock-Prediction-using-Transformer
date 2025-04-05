@@ -1,5 +1,7 @@
 # Stock Prediction Using Transformer
 
+https://www.linkedin.com/in/yejin-data/
+
 ## Overview
 
 Stock price forecasting remains a challenging task due to the volatility of financial markets and the complex, nonlinear patterns in historical data. This study investigates whether cutting-edge AI models can outperform traditional statistical methods in predicting stock prices, with a focus on **closing price prediction**, a key market indicator.
