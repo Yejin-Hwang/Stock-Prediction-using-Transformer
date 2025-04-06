@@ -30,23 +30,28 @@ The models are evaluated using:
 
 ---
 
-## 🚀 Suggested Additions for README
-
-You can consider adding these sections:
 
 1. **Project Structure**
    ```markdown
    ## Project Structure
-   - `data/`: Raw and preprocessed stock data
-   - `models/`: Model training and evaluation scripts
-   - `notebooks/`: Jupyter notebooks for EDA and results visualization
+   - `docs/`: Papers related to model architecture
    - `results/`: Plots and performance metrics
 
-## 2. 📊 Model Forecast Visualizations
+## 2. Model structure 
+
+
+<img src="./docs/ARIMA_structure.png" width="50%">
+
+<img src="./docs/Timesfm_structure.png" width="50%">
+
+<img src="./docs/Chronos-T5_structure.png" width="50%">
+
+## 3. Result
 
 ### 🔷 ARIMA Model (90 days prediction) 
 
-![ARIMA Forecast](./result/ARIMA_TSLA.png)
+<img src="./result/ARIMA_TSLA.png" width="80%">
+
 
 > **Performance**
 > - MAE: 63.26  
@@ -56,7 +61,8 @@ You can consider adding these sections:
 
 ### 🔷 ARIMA Model (5 days prediction) 
 
-![ARIMA Forecast](./result/ARIMA_TSLA_short.png)
+
+<img src="./result/ARIMA_TSLA_short.png" width="80%">
 
 > **Performance**
 > - MAE: 9.64
@@ -67,7 +73,7 @@ You can consider adding these sections:
 
 ### 🔵 Google TimesFM (90 days prediction) 
 
-![TimesFM Forecast](./result/timesfm_TSLA.png)
+<img src="./result/timesfm_TSLA.png" width="80%">
 
 > **Performance**
 > - MAE: 39.17  
@@ -76,7 +82,7 @@ You can consider adding these sections:
 
 ### 🔵 Google TimesFM (5 days prediction) 
 
-![TimesFM Forecast](./result/timesfm_TSLA_short.png)
+<img src="./result/timesfm_TSLA_short.png" width="80%">
 
 > **Performance**
 > - MAE: 7.37
@@ -87,7 +93,7 @@ You can consider adding these sections:
 
 ### 🟢 Amazon Chronos-T5 (90 days prediction) 
 
-![Chronos Forecast](./result/Chrono_TSLA.png)
+<img src="./result/Chrono_TSLA.png" width="80%">
 
 > **Performance**  
 > - MAE: 34.46  
@@ -96,7 +102,7 @@ You can consider adding these sections:
 
 ### 🟢 Amazon Chronos-T5 (5 days prediction) 
 
-![Chronos Forecast](./result/Chrono_TSLA_short.png)
+<img src="./result/Chrono_TSLA_short.png" width="80%">
 
 > **Performance**  
 > - MAE: 18.20
