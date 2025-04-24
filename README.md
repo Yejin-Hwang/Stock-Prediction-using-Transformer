@@ -151,3 +151,7 @@ The models are evaluated using:
    - Stock prices are heavily influenced by sentiment from news and social media.  
    - Adding external sentiment signals could improve forecast accuracy.
 
+
+## 📄 License  
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+
